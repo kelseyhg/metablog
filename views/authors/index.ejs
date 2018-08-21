@@ -1,0 +1,10 @@
+<h2>Our Illustrious Authors</h2>
+
+<% authors.forEach(function(a) {%>
+<div>
+	<hr>
+	<a href="/authors/ <%=a.id%>">
+		<%= a.name %>
+	</a>
+</div>
+<%});%>

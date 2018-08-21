@@ -1,0 +1,17 @@
+<h2> Add a new author </h2>
+
+<form method="POST" action="/authors">
+	<div class="form-group">
+		<label for="name">Author name</label><br>
+		<input class="new-content" name="name" placeholder="enter your full name" required>
+	</div>
+	<div class="form-group">
+		<label for="name">Profile image</label><br>
+		<input class="new-content" type="url" name="image" placeholder="link to a nice image of you!">
+	</div>
+	<div class="form-group">
+		<label for="name">Author bio</label><br>
+		<textarea class="new-content" name="bio" required></textarea>
+	</div>
+	<input type="submit" value="Register Author" class="btn btn-success">
+</form>

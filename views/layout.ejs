@@ -8,20 +8,33 @@
 			width: 900px;
 			margin: 10px auto;
 		}
+		.new-content {
+			width: 500px;
+		}
+
+		.light-text {
+			color: white;
+		}
+		.profile-pic {
+			width: 450px;
+			margin-bottom: 15px;
+		}
 	</style>
 </head>
 <body>
-	<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="/">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/articles">Articles</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/authors">Authors</a>
-  </li>
-</ul>
+	<nav class="navbar-dark bg-primary">
+		<ul class="nav">
+	  	<li class="nav-item">
+		    <a class="light-text nav-link active" href="/">BLOGblog</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="light-text nav-link" href="/articles">Articles</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="light-text nav-link" href="/authors">Authors</a>
+		  </li>
+	</ul>
+</nav>
 	<%- body%>
 		
 	<hr>

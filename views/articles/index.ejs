@@ -1,0 +1,12 @@
+<h2>The best articles money can buy</h2>
+
+<% articles.forEach(function(article){%>
+  <div>
+    <hr>
+    <h4>
+      <a href="/articles/<%=article.id%>">
+        <%= article.title %>
+      </a>
+    </h4>
+  </div>
+<%});%>

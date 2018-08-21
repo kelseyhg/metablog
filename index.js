@@ -14,10 +14,15 @@ app.use(bodyParser.urlencoded({extended: false}));
 // include controllers
 app.use('/authors', require('./controllers/authors'));
 app.use('/articles', require('./controllers/articles'));
+app.use('/comments', require('./controllers/comments'));
 
 // routes
 app.get('/', function(req, res){
 	res.render('home');
+});
+
+app.get("*", function(req, res){
+	res.render("error");
 });
 
 //listening
