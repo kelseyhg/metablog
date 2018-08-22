@@ -1,0 +1,10 @@
+<h2> So Many Beautiful and Informative Tags</h2>
+
+<% tags.forEach(function(t){%>
+<div>
+<a href='/tags/<%=t.id%>'>
+	<%=t.name%>
+</a>
+</div>
+
+<%});%>

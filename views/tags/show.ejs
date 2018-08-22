@@ -1,0 +1,11 @@
+<h2><%= tag.name %></h2>
+
+<h4>Articles from the <%=tag.name%> tag</h4>
+
+<% tag.articles.forEach(function(a){ %>
+<div>
+	<a href="/articles/<%=a.id%>">
+	<%= a.title %>
+	</a>
+</div>
+<%});%>
